@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>Document</title>
+	</head>
+<!-- Love Me Like You Do -->
+	<body class="contact">
+		<div class="content-head">
+			<div class="content-logo">
+				<img src="./img/contact/logo.webp">
+			</div>
+		</div>
+		<div class="slider_contact">
+			<ul>
+                <li><img src="./img/contact/2.jpg"></li>
+                <li><img src="./img/contact/3.jpg"></li>
+                <li><img src="./img/contact/4.jpg"></li>
+                <li><img src="./img/contact/5.jpg"></li>
+                <li><img src="./img/contact/6.jpg"></li>
+            </ul>
+		</div>
+		<form action="../../form-result.php" target="_blank">
+		    <div class="content-hr"><hr></div>
+			<h2 class="head-paragraph">Contacto</h2>
+			<input type="text" name="Nombres" placeholder="Nombres" minlength="5" maxlength="35" pattern="[A-Za-z0-9]+" required>
+			<input type="text" name="Apellidos" placeholder="Apellidos" minlength="5" maxlength="12" pattern="[A-Za-z0-9]+" required>
+			<input type="text" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento" minlength="5" maxlength="12" pattern="[A-Za-z0-9]+" required>
+			<input type="text" name="DNI" placeholder="DNI" minlength="5" maxlength="12" pattern="[A-Za-z0-9]+" required>
+			<label for="email"></label>
+			<input type="email" id="email" name="Correo" placeholder="Correo" minlength="5" maxlength="35" required>
+			<input type="number" name="Telefono" placeholder="Telefono" minlength="5" maxlength="12"  pattern="[A-Za-z0-9]+" required>
+			<textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+			<button class="send" type="submit">Enviar</button>
+			<div class="content-detail">
+            <div class="item-details">
+			    <div class="icon-details">
+                    <span class="lnr lnr-highlight"></span>    
+			    </div>
+            </div>
+             <div class="item-details">
+			    <div class="icon-details">
+                    <span class="lnr lnr-file-empty"></span>   
+			    </div>
+            </div>
+            <div class="item-details">
+			    <div class="icon-details">
+                      <span class="lnr lnr-diamond"></span> 
+			    </div>
+            </div>
+            </div>
+		</form>
+	</body>
+</html>
