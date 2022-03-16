@@ -1,0 +1,102 @@
+/*navbar*/
+
+.navbar{
+
+    position: fixed;
+    background-color: rgba(25, 211, 214, .6);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*min-width: 750px;*/
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    z-index: 999;
+
+    .nav__subcontainer{
+        display: flex;
+        list-style: none;
+        padding: 6px 0px;
+        padding-left: 15px;
+        margin: auto;
+        margin-right: 35px;
+        justify-content: space-between;
+
+        .navbar__link{
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+
+    a{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover{
+            color: #fafafa;
+            background-size: 100% 2px;
+        }
+    }
+
+    .navbar__link .navbar__items .navbar__items--hidden{    
+        display: none;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar__link:hover .navbar__items .navbar__items--show{
+        display: block;
+        list-style: none;
+        font-size: 12px;
+        min-width: 100px;
+        height: 100%;
+        padding: 6px 0 0 8px;
+    }
+
+}
+
+.logo{
+    padding: 5px 0;
+    margin-left: 35px;
+    position: relative;
+    width: auto;
+    color: #fff;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+/*media query*/
+@media (max-width:768px){
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar>ul{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        /*display: none;*/
+    }
+
+    .logo>h2{
+        width: 50%;
+    }
+
+    .navbar a{
+        font-size: .8em;
+    }
+}

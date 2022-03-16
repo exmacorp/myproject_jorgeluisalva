@@ -6,38 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Exma_Fashion</title>
+      <!-- metadata google -->
+    <meta name="autor" content="Exma_Fashion --exmacorp">
+    <meta name="title" content="Bienvenido, esperamos encuentres el producto que estas buscando">
+    <meta name="description" content="Tienda online de ropa, Aqui encontraras los mejores precios, Desarrollado pensado en ti">
+    <meta name="copyright" content="exmacorp" />
+    <meta name="keywords" content="HTML, CSS, SASS">
   </head>
   <body >
     
     <!--<div id="onload"></div>-->
-
+    
     <header>
         <nav class="navbar">
             <div class="logo">
                 <h2>Exma_Fashion</h2>
             </div>
-            <ul>
-                <li>
-                    <a href="">Inicio</a>
+            <ul class="nav__subcontainer navbar__subcontainer--show">
+                <li class="navbar__link">
+                    <a href="./index.html" target="_top" >Inicio</a>
                 </li>
-                <li>
-                    <a href="">Nosotros</a>
-                    <ul>
-                        <li><a href="">¿Quines Somos?</a></li>
+                <li class="navbar__link">
+                    <a href="#">Nosotros<img src="./assets/arrow.svg" class="menu__arrow" alt=""></a>
+                    <ul class="navbar__items">
+                        <li class="navbar__items--hidden navbar__items--show"><a href="./sections/nosotros.html" target="_blank">¿Quines Somos?</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="">Productos</a>
-                    <ul>
-                        <li><a href="">Hombres</a></li>
-                        <li><a href="">Mujeres</a></li>
+                <li class="navbar__link">
+                    <a href="#">Productos<img src="./assets/arrow.svg" class="menu__arrow" alt=""></a>
+                    <ul class="navbar__items">
+                        <li class="navbar__items--hidden navbar__items--show"><a href="./sections/productos.html">Hombres</a></li>
+                        <li class="navbar__items--hidden navbar__items--show"><a href="./sections/productos.html">Mujeres</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="./contact.html">Contacto</a>
+                <li class="navbar__link">
+                    <a href="./sections/contact.html" target="_blank">Contacto</a>
                 </li>
-                <li>
-                    <a href="">Login</a>
+                <li class="navbar__link">
+                    <a href="./sections/login.html" target="_blank">Login</a>
                 </li>
             </ul>
         </nav>
