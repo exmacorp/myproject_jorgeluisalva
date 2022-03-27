@@ -324,7 +324,7 @@ textarea {
             padding: 10px;
         }
         .about__text{
-            width: 80%;
+            width: 100%;
             height: 100px;
             display: inline-block;
             text-align: justify;
@@ -335,7 +335,7 @@ textarea {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 65px;
+            gap: 155px;
             .testimonio__img{
                 width: 80px;
                 height: 80px;
@@ -353,6 +353,56 @@ textarea {
 }
 
  /*media query__nosotros*/
+
+@media (max-width:962px){
+    .content__about {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .content__about__img{
+            width: 100%;
+            height: 100%;
+            margin: 8px 0;
+            .about__img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content__about__infor{
+            .about__title, .about__text{
+                flex: 1;
+                padding: 10px;
+            }
+            .about__text{
+                width: 100%;
+                height: 100px;
+                display: inline-block;
+                text-align: justify;
+                font-size: .8em;
+                padding-top: 0;
+            }
+            .about__testimonio{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+                .testimonio__img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .testimonio__parrafo{
+                display: flex;
+                padding: 10px;
+                .parrafo__1, .parrafo__2, .parrafo__3{
+                    font-size: .7em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:768px){
 
     .content__about{
@@ -468,6 +518,72 @@ textarea {
     }
 }
 
+/*Productos*/
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
 /*Footer*/
 
 .container__footer{
@@ -553,6 +669,16 @@ footer {
 .paragraph p{
     text-align: center;
     font-size: .8em;
+}
+
+@media (max-width:962px){
+    .footer{
+        margin-top: auto;
+    }
+
+    footer{
+        margin: 0;
+    }
 }
 
 @media(max-width: 768px){
